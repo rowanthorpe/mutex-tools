@@ -52,7 +52,7 @@ NOTA BENE
   connected pipelines, if the programs at the other end fill their buffers and
   can't continue.
 * By default the executables and libs are compiled with `-static`, to compile
-  them dynamically either tweak `m` or compile them manually.
+  them dynamically either tweak the build-tool `m` or compile them manually.
 
 Authors
 -------
@@ -163,7 +163,7 @@ TODO
 
 * `--help` output for both tools.
 * Add config-var to `libmutex_cat` and associated flag to `mutex_cat` to
-  change the delimiter to something other than newline (`getdelim() instead
+  change the delimiter to something other than newline (`getdelim()` instead
   of `getline()`)
 * Add config-var to `libmutex_cat` and associated flag to `mutex_cat` to
   activate holding the mutex until the process closes (i.e. until EOF instead
