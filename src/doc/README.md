@@ -4,7 +4,7 @@ mutex-tools
 Description
 -----------
 
-This package includes two tools:
+This package includes two executable tools written in c:
 
 1. 'mutex_cat' which acts like a simplified 'cat' but holds a mutex whenever
    outputing a line. This enables multiple instances outputting to the same
@@ -13,7 +13,7 @@ This package includes two tools:
    be used as a wrapper for an executable which prevents the stdout and
    stderr from being interlaced.
 
-and equivalent c libs for including in your own tools.
+and their functionality also in libs for including in your own c source.
 
 Building & Installation
 -----------------------
