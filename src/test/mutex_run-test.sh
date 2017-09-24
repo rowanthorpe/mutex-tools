@@ -18,19 +18,19 @@
 #  along with mutex-tools. If not, see <http://www.gnu.org/licenses/>.
 
 if test -z "${MUTEX_TOOLS_TESTING}"; then
-    MUTEX_TOOLS_TESTING=1 sh "${0}" 2>&1 | grep 'o' | grep -q 'e' || { printf 'mutex_run control test didn'\''t even interpolate\n' >&2; exit 1; }
-    MUTEX_TOOLS_TESTING=1 ! sh mutex_run "${0}" 2>&1 | grep 'o' | grep -q 'e' || { printf 'mutex_run test failed to prevent interpolation\n' >&2; exit 1; }
+    MUTEX_TOOLS_TESTING=1 sh "${0}" 2>&1 | grep 'a' | grep -q 'b' || { printf 'mutex_run control test didn'\''t even interpolate\n' >&2; exit 1; }
+    MUTEX_TOOLS_TESTING=1 ! sh mutex_run "${0}" 2>&1 | grep 'a' | grep -q 'b' || { printf 'mutex_run test failed to prevent interpolation\n' >&2; exit 1; }
 else
     for x in $(seq 10); do
         for x in $(seq 50); do
-            printf o
+            printf a
             /bin/sleep 0.001
         done
         printf \\n
     done &
     for x in $(seq 10); do
         for x in $(seq 50); do
-            printf e
+            printf b
             /bin/sleep 0.001
         done
         printf \\n
