@@ -18,8 +18,8 @@ and their functionality also in libs for including in your own c source.
 Building & Installation
 -----------------------
 
-Run ./m help for details about using "m" for building. Generated tarballs are
-appropriate for installing under a $PREFIX like /usr.
+Run `./m help` for details about using `m` for building. Generated tarballs are
+appropriate for installing under a `$PREFIX` like `/usr`.
 
 Built Components
 ----------------
